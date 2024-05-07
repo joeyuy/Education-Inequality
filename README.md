@@ -14,7 +14,7 @@ The third data set is from the US Census Annual Survey of School System Finances
 The EdGap and NCES datasets uniquely identify each school via the NCESSCH School ID, while the Census data identifies regions with the NCES id, a substring of the NCESSCH id.
 
 # Data Preparation
-Data from the above mentioned data sources were filtered down to relevant socio-economic, capital allocation, and performance (ACT scores) variables. Then, they are merged using the NCESSCH ID variable as the primary key. Rows with out of range variables (eg negative percentages) are dropped. To prepare the data for regression analysis, the data is split into a training and test set (80/20 ratio) and quantitative variables are normalized. Each of these data sets were cleaned by imputing NaN's in quantitative data, and dropping rows with NaN's in qualitative data.
+Data from the above mentioned data sources were filtered down to relevant socio-economic, capital allocation, and performance (ACT scores) variables. The EdGap and NCES data are first merged using the NCESSCH ID variable as the primary key, then the resulting data frame is merged with the Census data using NCES ID as the primary key. Rows with out of range variables (eg negative percentages) are dropped. To prepare the data for regression analysis, the data is split into a training and test set (80/20 ratio) and quantitative variables are normalized. Each of these data sets were cleaned by imputing NaN's in quantitative data, and dropping rows with NaN's in qualitative data.
 
 Data preparation was done in the jupyter notebook file: Education_Inequality_Data_Preparation.ipynb
 
