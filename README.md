@@ -19,3 +19,17 @@ Data preparation was done in the jupyter notebook file: Education_Inequality_Dat
 The cleaned training and testing data sets can be viewed at:
 1. education_train.csv
 2. education_test.csv
+
+# Regression Analysis
+The prepared data sets were used to build a regression analysis model. The best potential subsets of model features were first identified. These subsets were tested with random tuning parameters using elastic net regression on the training data. After determining the best subset and paramter to move on with, the model is applied on the test data and results are interpreted. All analysis can be viewed at: Education_Regression_Analysis.ipynb
+
+# Authors
+Joel Stockton Uy 
+
+https://www.linkedin.com/in/joel-uy/
+
+# License
+This project is licensed under the terms of Open Software License 3.0
+
+License Keyword: OSL-3.0
+
